@@ -1,0 +1,9 @@
+.weather-app-card-settings-location {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--card-secondary-inner-gap);
+  align-items: center;
+  padding: var(--locations-padding);
+  background-color: var(--locations-background-color);
+  border-radius: var(--locations-border-radius);
+}
