@@ -3,11 +3,11 @@
         class="ui-button"
         :class="uiButtonClasses"
     >
-        <img
+        <span
             v-if="icon"
-            :src="require(`../assets/icon-${icon}.svg`)"
             class="ui-button__icon"
-        >
+            v-html="appAdsIcons[icon].svg"
+        />
 
         <span class="ui-button__desc">
             <slot name="desc"></slot>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { appAdsIcons } from "./features/iconStorage";
 
 export default {
     name: "UiButton",
@@ -32,7 +33,7 @@ export default {
     },
     data () {
         return {
-            // imgPath: require(`../assets/icon-${icon}.svg`),
+            appAdsIcons,
         }
     },
 

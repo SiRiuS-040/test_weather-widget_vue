@@ -6,12 +6,11 @@
             v-if="data.hasIcon"
             class="weather-info-param-item__icon-wrapper"
         >
-            <img
-                :src="require(`../assets/icon-${data.icon}.svg`)"
-                alt="paramIcon"
+            <svg
                 class="weather-info-param-item__icon"
                 :style="`transform: rotate(${data.iconAngle}deg)`"
-            >
+                v-html="appAdsIcons[data.icon].svg"
+            />
         </span>
 
 
@@ -20,6 +19,8 @@
 </template>
 
 <script>
+import { appAdsIcons } from "./features/iconStorage";
+
 export default {
     name: "WeatherInfoParamItem",
 
@@ -27,6 +28,12 @@ export default {
         data: {
             type: Object,
         },
+    },
+
+    data() {
+        return {
+            appAdsIcons,
+        };
     },
 
     methods: {
