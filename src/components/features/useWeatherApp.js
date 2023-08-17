@@ -4,7 +4,7 @@ function useGetWeatherUrl(cityName, data) {
 }
 
 function useFindCityUrl(coords, data) {
-    return `http://api.openweathermap.org/geo/1.0/reverse?lat=${coords.latitude}&lon=${coords.longitude}&limit=5&appid=${data.settings.apiKey}`
+    return `https://api.openweathermap.org/geo/1.0/reverse?lat=${coords.latitude}&lon=${coords.longitude}&limit=5&appid=${data.settings.apiKey}`
 }
 
 export function checkAddLocationVisibility(data) {
