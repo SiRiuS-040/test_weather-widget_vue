@@ -6,14 +6,12 @@
             v-if="data.hasIcon"
             class="weather-info-param-item__icon-wrapper"
         >
-            <svg
+            <span
                 class="weather-info-param-item__icon"
                 :style="`transform: rotate(${data.iconAngle}deg)`"
                 v-html="appAdsIcons[data.icon].svg"
             />
         </span>
-
-
         <span>{{ collectStr(data) }}</span>
     </div>
 </template>

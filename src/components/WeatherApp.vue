@@ -45,9 +45,7 @@
 import UiButton from "./UiButton.vue";
 import WeatherAppCard from "./WeatherAppCard.vue";
 import WeatherAppSettings from "./WeatherAppSettings.vue";
-
 import { appData } from "./features/weatherAppData";
-
 import { firstStart, setStartCard, updateCardsFromLocalStorage } from "./features/useWeatherApp";
 
 export default {
@@ -66,9 +64,7 @@ export default {
 
     mounted() {
         let currentData = this.appData
-
         firstStart(this.appData)
-
         setInterval(function() {
             setStartCard(currentData)
             updateCardsFromLocalStorage(currentData)

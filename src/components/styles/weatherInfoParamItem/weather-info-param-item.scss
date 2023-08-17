@@ -1,14 +1,16 @@
-.weather-info-param-item {
-  display: flex;
-  align-items: center;
+#weatherWidget {
+  & .weather-info-param-item {
+    display: flex;
+    align-items: center;
 
-  &__icon-wrapper {
-    margin-right: 4px;
-  }
+    &__icon-wrapper {
+      margin-right: 4px;
+    }
 
-  &__icon {
-    display: block;
-    width: 10px;
-    height: 10px;
+    &__icon {
+      display: block;
+      width: 10px;
+      height: 10px;
+    }
   }
 }

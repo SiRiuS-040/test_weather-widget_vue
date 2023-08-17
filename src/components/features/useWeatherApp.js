@@ -58,8 +58,6 @@ export async function addLocation(cityName, data) {
                 useGetWeatherUrl(cityName, data));
             let responseData = await response.json();
 
-            console.log(responseData)
-
             if (responseData.message !== 'city not found') {
                 const newLocation = await Object();
                 Object.assign(newLocation, collectCardData(responseData))

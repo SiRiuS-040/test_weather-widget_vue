@@ -1,13 +1,15 @@
-.weather-info-status-image {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#weatherWidget {
+  & .weather-info-status-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: var(--weather-visual-image-width);
-  height: 60px;
+    width: var(--weather-visual-image-width);
+    height: 60px;
 
-  &__icon {
-    transform: scale(1.5);
+    &__icon {
+      transform: scale(1.5);
+    }
   }
 }

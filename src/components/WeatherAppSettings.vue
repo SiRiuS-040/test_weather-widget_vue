@@ -87,7 +87,6 @@ export default {
 
     data(props) {
         let searchInput = ''
-
         return {
             card: props.data,
             drag: false,

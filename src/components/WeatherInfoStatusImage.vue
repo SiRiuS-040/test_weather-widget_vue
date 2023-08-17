@@ -1,22 +1,10 @@
 <template>
     <div class="weather-info-status-image">
-<!--        <img-->
-<!--            :src="require(`../assets/icons/${iconName}.svg`)"-->
-<!--            class="weather-info-status-image__icon"-->
-<!--        />-->
-
         <span
             class="weather-info-status-image__icon"
             v-html="appWeatherIcons[iconName].svg"
         >
-
         </span>
-<!--        <svg-->
-<!--            class="weather-info-status-image__icon"-->
-<!--            v-html="appWeatherIcons[iconName].svg"-->
-<!--        />-->
-
-
     </div>
 </template>
 
@@ -38,7 +26,6 @@ export default {
             appWeatherIcons,
         }
     },
-
 }
 </script>
 

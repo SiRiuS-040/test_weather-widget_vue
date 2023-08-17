@@ -8,7 +8,6 @@
             class="ui-button__icon"
             v-html="appAdsIcons[icon].svg"
         />
-
         <span class="ui-button__desc">
             <slot name="desc"></slot>
         </span>
