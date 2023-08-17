@@ -16,10 +16,10 @@
             class="weather-app__content"
         >
             <p class="weather-app__plug-message">
-                Automatic set up failed
+                Failed to load apiData
             </p>
             <p class="weather-app__plug-message">
-                Please choose your location
+                Please check your internet connection or Api configuration
             </p>
         </div>
         <div

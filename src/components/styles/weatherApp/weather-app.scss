@@ -23,6 +23,10 @@
       justify-content: center;
     }
 
+    &__plug-message {
+      text-align: center;
+    }
+
     &__cards {
       display: flex;
       flex-direction: column;

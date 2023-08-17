@@ -1,10 +1,10 @@
 
 function useGetWeatherUrl(cityName, data) {
-    return `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=${data.settings.appLang}&units=${data.settings.appUnits}&cnt=3&appid=${data.settings.apiKey}`
+    return `https://api.aopenweathermap.org/data/2.5/weather?q=${cityName}&lang=${data.settings.appLang}&units=${data.settings.appUnits}&cnt=3&appid=${data.settings.apiKey}`
 }
 
 function useFindCityUrl(coords, data) {
-    return `https://api.openweathermap.org/geo/1.0/reverse?lat=${coords.latitude}&lon=${coords.longitude}&limit=5&appid=${data.settings.apiKey}`
+    return `https://api.aopenweathermap.org/geo/1.0/reverse?lat=${coords.latitude}&lon=${coords.longitude}&limit=5&appid=${data.settings.apiKey}`
 }
 
 export function checkAddLocationVisibility(data) {
