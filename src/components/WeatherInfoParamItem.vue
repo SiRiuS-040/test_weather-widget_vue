@@ -2,7 +2,20 @@
     <div
         class="weather-info-param-item"
     >
-        {{ collectStr(data) }}
+        <span
+            v-if="data.hasIcon"
+            class="weather-info-param-item__icon-wrapper"
+        >
+            <img
+                :src="require(`../assets/icon-${data.icon}.svg`)"
+                alt="paramIcon"
+                class="weather-info-param-item__icon"
+                :style="`transform: rotate(${data.iconAngle}deg)`"
+            >
+        </span>
+
+
+        <span>{{ collectStr(data) }}</span>
     </div>
 </template>
 
@@ -25,5 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../components/styles/weatherInfoParamItem/weather-info-status-item";
+    @import "../components/styles/weatherInfoParamItem/weather-info-param-item";
 </style>

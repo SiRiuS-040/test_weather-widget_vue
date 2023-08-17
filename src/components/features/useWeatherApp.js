@@ -58,6 +58,8 @@ export async function addLocation(cityName, data) {
                 useGetWeatherUrl(cityName, data));
             let responseData = await response.json();
 
+            console.log(responseData)
+
             if (responseData.message !== 'city not found') {
                 const newLocation = await Object();
                 Object.assign(newLocation, collectCardData(responseData))
@@ -132,29 +134,44 @@ export function collectCardData(data) {
         weatherInfo: getWeatherInfo,
         weatherParams: [
             {
-                name: 'Min temp',
-                value: dataMathRound(data.main.temp_min),
-                metric: '°С',
-            },
-            {
-                name: 'Max temp',
-                value: dataMathRound(data.main.temp_max),
-                metric: '°С',
+                name: 'Wind',
+                value: data.wind.speed,
+                metric: 'm/s',
+                hasIcon: true,
+                icon: 'direction',
+                iconAngle: data.wind.deg,
             },
             {
                 name: 'Pressure',
                 value: data.main.pressure,
                 metric: 'hPa',
+                hasIcon: false,
+                icon: '',
+                iconAngle: 0,
+            },
+            {
+                name: 'Min temp',
+                value: dataMathRound(data.main.temp_min),
+                metric: '°С',
+                hasIcon: false,
+                icon: '',
+                iconAngle: 0,
+            },
+            {
+                name: 'Max temp',
+                value: dataMathRound(data.main.temp_max),
+                metric: '°С',
+                hasIcon: false,
+                icon: '',
+                iconAngle: 0,
             },
             {
                 name: 'Humidity',
                 value: data.main.humidity,
                 metric: '%',
-            },
-            {
-                name: 'Wind',
-                value: data.wind.speed,
-                metric: 'm/s',
+                hasIcon: false,
+                icon: '',
+                iconAngle: 0,
             },
         ]
     };

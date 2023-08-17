@@ -20,30 +20,44 @@ export const appData = {
             weatherInfo: 'TestTestTest',
             weatherParams: [
                 {
-                    name: 'Min temp',
-                    value: 10,
-                    metric: '°С',
-                },
-                {
-                    name: 'Max temp',
-                    value: 15,
-                    metric: '°С',
+                    name: 'Wind speed',
+                    value: 100,
+                    metric: 'm/s',
+                    hasIcon: true,
+                    icon: 'direction',
+                    iconAngle: 0,
                 },
                 {
                     name: 'Pressure',
                     value: 1000,
                     metric: 'hPa',
+                    hasIcon: false,
+                    icon: '',
+                    iconAngle: 0,
+                },
+                {
+                    name: 'Min temp',
+                    value: 10,
+                    metric: '°С',
+                    hasIcon: false,
+                    icon: '',
+                    iconAngle: 0,
+                },
+                {
+                    name: 'Max temp',
+                    value: 15,
+                    metric: '°С',
+                    hasIcon: false,
+                    icon: '',
+                    iconAngle: 0,
                 },
                 {
                     name: 'Humidity',
                     value: 75,
                     metric: '%',
-                },
-                {
-                    name: 'Wind speed',
-                    value: 100,
-                    metric: 'm/s',
-
+                    hasIcon: false,
+                    icon: '',
+                    iconAngle: 0,
                 },
             ]
         }
