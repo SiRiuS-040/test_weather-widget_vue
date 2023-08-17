@@ -4,9 +4,8 @@ export const appData = {
         showPlug: true,
         userCityNotLocated: true,
         isSettingsOpen: false,
-        isColumnOrientation: false,
         isAddLocationVisible: true,
-        updatePeriod: 300000, // обновление сведений каждые 15 минут - 900000
+        updatePeriod: 60000, // обновление сведений каждые 15 минут - 900000
         maxWidgets: 4,
         appLang: 'en',
         appUnits: 'metric',

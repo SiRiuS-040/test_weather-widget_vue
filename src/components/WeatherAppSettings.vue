@@ -3,7 +3,7 @@
         <div
             class="weather-app-card__content"
         >
-            <div class="weather-app-card__title-wrapper">
+            <div class="weather-app-settings__title-wrapper">
                 <div class="weather-app-card__title">
                     Settings
                 </div>
@@ -17,9 +17,8 @@
             </div>
             <draggable
                 :list="appData.cardsList"
+                handle=".location-drag-handle"
                 group="cards"
-                @start="drag=true"
-                @end="drag=false"
                 item-key="cardData"
                 class="weather-app-settings__location-list"
             >
@@ -51,7 +50,7 @@
                     </label>
                     <UiButton
                         @click="addNewLocation"
-                        icon="add2"
+                        icon="add"
                         buttonType="add"
                         class="weather-app-settings__btn"
                     >
@@ -91,7 +90,7 @@ export default {
 
         return {
             card: props.data,
-            drag: true,
+            drag: false,
             searchInput,
             saveLocationsToStorage,
             addLocation,

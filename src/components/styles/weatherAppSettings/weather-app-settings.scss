@@ -9,6 +9,13 @@
   min-height: var(--card-height);
   border-radius: var(--card-border-radius);
 
+  &__title-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    gap: var(--card-main-inner-gap);
+  }
+
   &__location-list {
     display: grid;
     gap: 5px;

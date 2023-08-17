@@ -6,9 +6,7 @@
             <div class="weather-app-card__title-wrapper">
                 <p
                     class="weather-app-card__title">
-                    <span>
                         {{ `${card.cardData.name}, ${card.cardData.country}` }}
-                    </span>
                 </p>
             </div>
             <div class="weather-app-card__content weather-info">

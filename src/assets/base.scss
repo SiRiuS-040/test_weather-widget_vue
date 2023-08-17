@@ -13,6 +13,7 @@
   --card-between-gap: 10px;
   --card-paddings: 15px;
   --card-border-radius: 10px;
+  --card-title-font-size: 13px;
 
   --input-border-radius: 3px;
   --input-border-style: 1px solid gray;
@@ -21,6 +22,12 @@
   --locations-border-radius: 3px;
   --locations-background-color: #E6E6E6FF;
   --locations-padding: 5px;
+
+  --weather-visual-font-size: 35px;
+  --weather-visual-font-weight: 700;
+  --weather-visual-image-width: 100px;
+
+  --weather-info-status-desc-font-size: 12px;
 }
 
 body {

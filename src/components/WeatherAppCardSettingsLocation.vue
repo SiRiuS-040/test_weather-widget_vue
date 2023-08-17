@@ -3,12 +3,13 @@
         <UiButton
             icon="menu"
             buttonType="drag"
+            class="location-drag-handle"
         >
         </UiButton>
             {{ cardData.name }}
         <UiButton
             @click="deleteLocation(cardData.id)"
-            icon="del3"
+            icon="del"
             buttonType="del"
         >
         </UiButton>

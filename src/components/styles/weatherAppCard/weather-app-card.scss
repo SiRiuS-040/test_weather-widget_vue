@@ -22,28 +22,20 @@
   &__title-wrapper {
     display: grid;
     grid-template-columns: 1fr auto;
-    min-height: 20px;
-    align-items: center;
+    min-height: 32px;
     justify-content: center;
-    gap: var(--card-main-inner-gap);
+    gap: 25px;
   }
 
   &__title {
     font-weight: 700;
+    font-size: var(--card-title-font-size);
 
-  }
-
-  &__btn {
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-
-    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__icon {
@@ -56,8 +48,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: var(--weather-visual-font-size);
+    font-weight: var(--weather-visual-font-weight);
   }
 }
 
@@ -67,11 +59,13 @@
 
   &__desc {
     margin-top: 10px;
+    font-size: var(--weather-info-status-desc-font-size);
+    font-weight: var(--weather-visual-font-weight);
   }
 
   &__visual {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: var(--weather-visual-image-width) 1fr;
     align-items: center;
     justify-content: center;
     gap: var(--card-main-inner-gap);
